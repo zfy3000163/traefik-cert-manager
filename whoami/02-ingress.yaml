@@ -4,6 +4,8 @@ kind: IngressRoute
 metadata:
   name: whoami
   namespace: whoami
+  annotations:
+    kubernetes.io/ingress.class: "traefik-internal"
 spec:
   entryPoints:
     - websecure
@@ -22,6 +24,8 @@ kind: IngressRoute
 metadata:
   name: powpow
   namespace: whoami
+  annotations:
+    kubernetes.io/ingress.class: "traefik-internal"
 spec:
   entryPoints:
     - websecure

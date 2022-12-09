@@ -11,10 +11,10 @@ spec:
     #- app.org 
     - whoami.cert.containous.cloud
   issuerRef:
-    #name: ca-issuer 
-    #kind: Issuer
-    name: letsencrypt-staging
-    kind: ClusterIssuer
+    name: ca-issuer 
+    kind: Issuer
+    #name: letsencrypt-staging
+    #kind: ClusterIssuer
   renewBefore: 6m 
   duration: 1h
 
@@ -31,9 +31,9 @@ spec:
     #- whoami.whoami.svc.cluster.local 
     - powpow.cert.containous.cloud
   issuerRef:
-    #name: ca-issuer 
-    #kind: Issuer
-    name: letsencrypt-staging
-    kind: ClusterIssuer
+    name: ca-issuer 
+    kind: Issuer
+    #name: letsencrypt-staging
+    #kind: ClusterIssuer
   renewBefore: 6m 
   duration: 1h
